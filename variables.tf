@@ -8,6 +8,13 @@ variable "schema" {
   description = "the schema of the appsync instance"
 }
 
+variable "appsync_certificate_arn" {
+  type        = string
+  description = "the certificate arn of the appsync instance"
+  default     = ""
+
+}
+
 variable "xray" {
   type        = bool
   description = "whether to enable xray tracing"
